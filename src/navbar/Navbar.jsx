@@ -3,11 +3,8 @@ import "./NavbarStyles.css";
 const Navbar = () => {
   return (
     <nav className='navbar'>
-      <article className='navbar-title'>
-        <h1>ChatFlow</h1>
-      </article>
-
       <ul className='navbar-link-container'>
+        <li>ChatFlow</li>
         <li>Home</li>
         <li>Pricing</li>
         <li>Support</li>

@@ -1,21 +1,17 @@
 .navbar {
 	max-width: 1440px;
-	width: 95%;
-	background: transparent;
-	box-shadow: 1px 2px 1px 2px gray;
+	width: 98%;
 	height: 65px;
-	margin: 0 auto;
-	margin-top: 15px;
+	margin: 0px auto;
 	justify-content: space-between;
 	display: flex;
 	flex-direction: row;
+	padding: 6px;
+	background: #94a3b8;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
 }
 
-.navbar-title {
-	display: flex;
-	align-items: center;
-	margin-left: 15px;
-}
 
 .navbar-link-container {
 	display: flex;
@@ -26,8 +22,13 @@
 	cursor: pointer;
 }
 
-.navbar-link-container li {
-	font-size: 1rem;
+.navbar-link-container li:nth-child(1) {
+	color: white;
+	font-size: 1.2rem;
+}
+
+.navbar-link-container li:hover {
+	color: white;
 }
 
 .navbar-buttons-container {
@@ -42,4 +43,20 @@
 	border-radius: 0;
 	background: transparent;
 	cursor: pointer;
+}
+
+.navbar-buttons-container button:nth-child(1) {
+	color: black;
+}
+
+.navbar-buttons-container button:nth-child(1):hover {
+	color: white;
+}
+
+.navbar-buttons-container button:nth-child(2) {
+	color: white;
+}
+
+.navbar-buttons-container button:nth-child(2):hover {
+	color: black;
 }
