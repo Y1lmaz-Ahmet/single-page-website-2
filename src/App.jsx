@@ -1,8 +1,10 @@
+import Navbar from "./navbar/Navbar";
+
 function App() {
   return (
-    <div>
-      <h1>chatflow project</h1>
-    </div>
+    <>
+      <Navbar />
+    </>
   );
 }
 
