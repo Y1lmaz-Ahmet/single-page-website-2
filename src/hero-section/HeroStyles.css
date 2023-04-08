@@ -97,3 +97,25 @@
 	background-size: contain;
 	background-position: center;
 }
+
+@media screen and (max-width:700px) {
+	.hero {
+		height: 700px;
+		background-image: url('../assets/Rectangle1.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 650px;
+		width: 100%;
+	}
+
+	.grid-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		width: 100%;
+		justify-content: center;
+		height: auto;
+		gap: 10px;
+	}
+}

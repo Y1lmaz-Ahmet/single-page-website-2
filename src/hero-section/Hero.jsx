@@ -1,8 +1,12 @@
 import React from "react";
 import "./HeroStyles.css";
+import Navbar from "../navbar/Navbar";
 const Hero = () => {
   return (
     <div className='hero'>
+      <nav>
+        <Navbar />
+      </nav>
       <div className='grid-container'>
         <article className='grid-left'>
           <h1>Improve your customer experience with real-time assistance</h1>
