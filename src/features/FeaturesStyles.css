@@ -32,7 +32,7 @@
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	gap: 8px;
-	border-bottom: 1px solid red;
+
 }
 
 .featured-item img {
@@ -48,4 +48,114 @@
 .featured-item p {
 	font-size: 16px;
 	line-height: 26px;
+}
+
+@media screen and (max-width:1050px) {
+	#features {
+		max-width: 1050px;
+		width: 98%;
+		height: auto;
+		margin: 0px auto;
+		background: black;
+		color: white;
+		display: grid;
+		grid-template-rows: repeat(6, auto);
+		grid-template-columns: 1fr;
+		padding: 36px;
+	}
+
+	.featured-item-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		gap: 8px;
+
+	}
+
+	.featured-item img {
+		width: 40px;
+		height: 40px;
+	}
+
+	.featured-item h1 {
+		font-size: 20px;
+		line-height: 25.14px;
+	}
+
+	.featured-item p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+}
+
+@media screen and (max-width:750px) {
+	#features {
+		max-width: 750px;
+		width: 100%;
+		height: auto;
+		margin: 0px auto;
+		color: white;
+		display: grid;
+		grid-template-rows: repeat(6, auto);
+		grid-template-columns: 1fr;
+		padding: 15px;
+	}
+}
+
+@media screen and (max-width:510px) {
+	#features {
+		max-width: 750px;
+		width: 100%;
+		height: auto;
+
+		color: white;
+		display: grid;
+		grid-template-rows: repeat(6, auto);
+		grid-template-columns: 1fr;
+		padding: 15px;
+	}
+
+	.featured-item-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, auto);
+		gap: 8px;
+
+		padding: 6px;
+	}
+
+	.featured-item {
+		border-radius: 13px;
+		border: 1px solid gray;
+		display: grid;
+		grid-template-rows: repeat(3, auto);
+		gap: 10px;
+		padding: 5px;
+		box-shadow: inset 1px 2px 1px gray, 2px 1px 1px gray;
+	}
+
+	.features-header h1 {
+		font-size: 30px;
+		margin-bottom: 15px;
+	}
+
+	.features-header h4 {
+		max-width: 400px;
+		margin-bottom: 15px;
+	}
+
+	.featured-item img {
+		width: 50px;
+		height: 50px;
+		margin: auto;
+	}
+
+	.featured-item h1 {
+		margin: auto;
+	}
+
+	.featured-item p {
+		width: 100%;
+		text-align: left;
+	}
 }
